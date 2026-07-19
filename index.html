@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sales Lead Qualification Classification System</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="left-panel">
+
+<h1>Sales Lead Qualification Classification System</h1>
+
+<p class="subtitle">
+Business Growth Analytics using Machine Learning
+</p>
+
+<div class="form-group">
+<label>Customer Name</label>
+<input type="text" id="customer" placeholder="Enter Customer Name">
+</div>
+
+<div class="form-group">
+<label>Lead Origin</label>
+<input type="text" id="origin" placeholder="Website / Email / Social Media">
+</div>
+
+<div class="form-group">
+<label>Lead Source</label>
+<input type="text" id="source" placeholder="Google / Facebook / LinkedIn">
+</div>
+
+<div class="form-group">
+<label>Total Website Visits</label>
+<input type="number" id="visits">
+</div>
+
+<div class="form-group">
+<label>Time Spent on Website (Minutes)</label>
+<input type="number" id="time">
+</div>
+
+<div class="form-group">
+<label>Page Views</label>
+<input type="number" id="pages">
+</div>
+
+<div class="form-group">
+<label>Occupation</label>
+<input type="text" id="occupation" placeholder="Student / Employee / Business">
+</div>
+
+<div class="form-group">
+<label>City</label>
+<input type="text" id="city">
+</div>
+
+<div class="form-group">
+<label>Specialization</label>
+<input type="text" id="specialization">
+</div>
+
+<div class="form-group">
+<label>Last Activity</label>
+<input type="text" id="activity" placeholder="Email Opened / Phone Call">
+</div>
+
+<button onclick="predictLead()">
+Predict Lead Qualification
+</button>
+
+</div>
+
+<div class="right-panel">
+
+<h2>Prediction Result</h2>
+
+<div class="result-card">
+
+<div class="emoji" id="emoji">
+📈
+</div>
+
+<h3 id="result">
+Waiting for Prediction...
+</h3>
+
+<p id="confidence">
+Confidence : --
+</p>
+
+<p id="status">
+Lead Status : --
+</p>
+
+<p id="recommendation">
+Enter customer information and click Predict Lead Qualification.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
